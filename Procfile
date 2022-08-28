@@ -1,0 +1,1 @@
+web: gunicorn brasilparalelo.wsgi --log-file -

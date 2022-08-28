@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'filme',
     'crispy_forms',
     'crispy_bootstrap5',
-    'cloudinary-storage',
+    'cloudinary_storage',
     'cloudinary',
 ]
 

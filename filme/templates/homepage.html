@@ -17,13 +17,13 @@ HomePage Brasil Paralelo
 {% endblock %}
 
 {% block content %}
-    <header class="min-h-screen bg-black bg-opacity-75 bg-blend-overlay showcase border-gray-600 border-b-8 flex justify-center items-center bg-no-repeat"  style="background-image: url('{% static 'images/background_netflix.jpg' %}');">
+    <header class="min-h-screen bg-black bg-opacity-50 bg-blend-overlay showcase border-yellow-100 border-b-8 flex justify-center items-center bg-no-repeat"  style="background-image: url('{% static 'images/background-oficial.jpg' %}');">
         <div class="z-10 h-full py-32 md:py-0 text-gray-100 text-center flex items-center flex-col">
-            <h1 class="font-semibold text-4xl md:text-5xl w-10/12 md:w-3/4 text-center">
-                Filmes e séries da Hashtag, tudo em um só lugar.
+            <h1 class="font-semibold text-4xl md:text-5xl w-10/12 md:w-3/4 text-center" style="color:#b5995f">
+                Documentários da Brasil Paralelo em um único local.
             </h1>
             <h3 class="text-xl md:text-xl py-5">
-                Assista onde quiser. Cancele quando quiser.
+                Assista onde quiser. Vídeos diretamente do YouTube.
             </h3>
             <h4 class="text-sm md:text-lg pb-3">
                 Quer começar? Coloque seu e-mail abaixo para acessar.
@@ -34,7 +34,7 @@ HomePage Brasil Paralelo
                         {% csrf_token %}
                         <div class="flex flex-grow items-stretch">
                             {{ form }}
-                            <button class="bg-red-600 font-medium md:font-normal flex justify-center items-center py-2 px-3 md:px-0 rounded-br-sm rounded-tr-sm md:text-2xl" type="submit">
+                            <button class="bg-yellow-600 font-medium md:font-normal flex justify-center items-center py-2 px-3 md:px-0 rounded-br-sm rounded-tr-sm md:text-2xl" type="submit">
                                 <span>
                                     Acessar
                                 </span>
@@ -47,56 +47,51 @@ HomePage Brasil Paralelo
             </div>
         </div>
     </header>
-
-    <section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+    <section class='flex flex-col md:flex-row items-center border-yellow-100 border-b-8' style="min-height: 70vh;">
         <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10 ">
-            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
-                Enjoy on your TV.
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4" style="color:#b5995f">
+                Assista nossa programação Semanal.
             </h2>
             <h5 class="md:text-xl text-lg">
-                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+                São trabalhos de alta qualidade de imagem e produção, roteiros exclusivos e direção impecável.
             </h5>
         </div>
         <div class='md:w-1/2 flex justify-center items-center'>
-            <img src="{% static 'images/tv.png' %}" class="w-8/12" alt="">
+            <img src="{% static 'images/Home-page-imagem-1.jpg' %}" class="w-5/12" alt="">
         </div>
     </section>
-
-    <section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+    <section class='flex flex-col md:flex-row items-center border-yellow-100 border-b-8' style="min-height: 70vh;">
         <div class='md:w-1/2 flex justify-center items-center '>
-            <img src="{% static 'images/mobile-0819.jpg' %}" class="w-8/12" alt="">
+            <img src="{% static 'images/rasta-imagem-homepage.jpg' %}" class="w-5/12" alt="">
         </div>
-
         <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10">
-            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
-                Download your shows to watch offline.
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4" style="color:#b5995f">
+                Rasta News: Sucesso de audiência.
             </h2>
             <h5 class="md:text-xl text-lg">
-                Save your favorites easily and always have something to watch.
+                Uma análise sincera e descomedida de temas atuais do nosso Brasil.
             </h5>
         </div>
-
     </section>
-
-    <section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+    <section class='flex flex-col md:flex-row items-center border-yellow-100 border-b-8' style="min-height: 70vh;">
         <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10">
-            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
-                Create profiles for kids.
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4" style="color:#b5995f">
+                Conteúdos EXCLUSIVO para membros.
             </h2>
             <h5 class="md:text-xl text-lg">
-                Send kids on adventures with their favorite characters in a space made just for them—free with your membership.
+                Seja um assinante da Brasil Paralelo e tenha acesso ao nosso Streaming em sua TV Samsung, LG e no ChromeCast.
             </h5>
         </div>
         <div class='md:w-1/2 flex justify-center items-center'>
-            <img src="{% static 'images/netflix_kid.png' %}" class="w-8/12" alt="">
+            <img src="{% static 'images/imagem-home-page-imagem-2.jpg' %}" class="w-10/12" alt="">
         </div>
     </section>
     <footer class=" px-5 py-10 ">
         <ul class="flex justify-between items-center">
 
-            <li>&copy; 2021</li>
+            <li>&copy; 2022 Rodrigo Joaquim Almeida</li>
             <li> Feito com Python (Django)</li>
-            <li>Hashtag</li>
+            <li>BP Flix</li>
         </ul>
     </footer>
 {% endblock %}

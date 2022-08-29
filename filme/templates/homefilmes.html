@@ -88,26 +88,26 @@ Home Filmes Brasil Paralelo
         <section class="h-screen relative bg-no-repeat pb-8 pl-6 flex items-end bg-cover" style="background-image: url('{{ filme_destaque.thumb.url }}');">
             <div>
                 <h2 class="text-6xl font-semibold text-white my-4">
-                    {{ filme_destaque.titulo }}
+                    <span style="color:#b5995f">{{ filme_destaque.titulo }}</span>
                 </h2>
                 <p class=" w-11/12 md:w-5/12 font-medium text-white my-4">
                     {{ filme_destaque.descricao }}
                 </p>
                 <div class="flex my-4">
                     <a href="{% url 'filme:detalhesfilme' filme_destaque.id %}">
-                        <button class="flex items-center bg-white py-2 px-5 rounded-md" style='color:black;'>
-                            <ion-icon name="play" class="text-2xl"></ion-icon>
-                            <span class="ml-3 font-medium " >
-                                Play
+                        <button class="flex items-center bg-yellow-600 py-2 px-5 rounded-md" style='color:white;'>
+                            <ion-icon name="play" class="text-2xl" ></ion-icon>
+                            <span class="ml-3 font-medium" >
+                                Acessar
                             </span>
                         </button>
                     </a>
                 </div>
             </div>
         </section>
-        <section class='bg-primary_black flex justify-center py-10'>
+        <section class="bg-black bg-opacity-75 bg-blend-overlay flex justify-center py-10 bg-repeat bg-center" style="background-image: url('{% static 'images/backgroud-nao-preto.jpg' %}');">
             <div class="p-8 w-10/12 relative" >
-                <h2 class="text-gray-200 text-2xl font-medium">
+                <h2 class="text-gray-200 text-2xl font-medium" style="color:#b5995f">
                     Novo
                 </h2>
                 <div class="wrapper">
@@ -142,9 +142,10 @@ Home Filmes Brasil Paralelo
                 </div>
             </div>
         </section>
-        <section class='bg-primary_black flex justify-center py-10'>
+        <section class="bg-primary_black flex justify-center py-10">
+            <img src="{% static 'images/barrinha-fixa-vertical.png' %}" class="w-1/100 items-left" alt="">
             <div class="p-8 w-10/12 relative" >
-                <h2 class="text-gray-200 text-2xl font-medium">
+                <h2 class="text-gray-200 text-2xl font-medium" style="color:#b5995f">
                     Em Alta
                 </h2>
                 <div class="wrapper">
@@ -178,10 +179,11 @@ Home Filmes Brasil Paralelo
                     {% endif %}
                 </div>
             </div>
+            <img src="{% static 'images/barrinha-fixa-vertical.png' %}" class="w-1/100 items-left" alt="">
         </section>
-        <section class='bg-primary_black flex justify-center py-10'>
+        <section class="bg-black bg-opacity-75 bg-blend-overlay flex justify-center py-10 bg-repeat bg-center" style="background-image: url('{% static 'images/backgroud-nao-preto.jpg' %}');">
             <div class="p-8 w-10/12 relative" >
-                <h2 class="text-gray-200 text-2xl font-medium">
+                <h2 class="text-gray-200 text-2xl font-medium" style="color:#b5995f">
                     Filmes Vistos Recentes
                 </h2>
                 <div class="wrapper">
